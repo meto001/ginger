@@ -8,11 +8,11 @@ __date__ = '2019/7/8 17:33'
 api = Redprint('book')
 
 
-@api.route('/get')
+@api.route('/',methods=['GET'])
 def get_book():
     return 'get book'
 
 
-@api.route('/create')
+@api.route('/',methods=['POST'])
 def create_book():
     return 'create book'
